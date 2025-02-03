@@ -1,15 +1,35 @@
-# QBitShield
-Quantum Threats to Bitcoin &amp; Foundational Solutions for a Decentralized Evolution
+# 🔒 QBitShield  
+**Quantum-Resistant Bitcoin Protocol**  
+*By Ubix The Sard & NeuroSynth AI*  
 
-# QBit Shield | Quantum-Resistant Bitcoin Prototype  
-*A project by Ubix The Sard and NeuroSynth AI*  
+[![License: GPL-3.0](https://img.shields.io/badge/License-GPL3.0-blue.svg)](LICENSE)  
+[![Build Status](https://img.shields.io/github/actions/workflow/status/Ubix-Sard/QBitShield/build_test.yml)](.github/workflows/build_test.yml)  
 
-## Mission  
-Future-proof Bitcoin against quantum attacks through stealth addresses, hybrid signatures, and decentralized governance.  
+---
 
-## Getting Started  
-1. **Testnet Prototype**:  
-   ```bash  
-   git clone https://github.com/UbixSard/QBitShield  
-   cd QBitShield/prototype  
-   python3 stealth_address.py --generate  
+## 🚀 Mission  
+Future-proof Bitcoin against quantum computing threats through:  
+- **Stealth Addresses** (BIP-352 Extended)  
+- **Hybrid ECDSA/SPHINCS+ Signatures**  
+- **Decentralized Governance**  
+
+---
+
+## 📦 Features  
+- **Quantum-Resistant Transactions**: One-time addresses and post-quantum cryptography.  
+- **Testnet Prototype**: Simulate quantum attacks on Bitcoin Signet.  
+- **Auto-Migration Tools**: Securely transition legacy UTXOs to stealth addresses.  
+
+---
+
+## 🛠️ Getting Started  
+
+### Prerequisites  
+- Python 3.12+  
+- Bitcoin Core (Signet)  
+
+### Installation  
+```bash  
+git clone https://github.com/Ubix-Sard/QBitShield.git  
+cd QBitShield/prototype/stealth_address  
+python3 stealth_address.py  
