@@ -1,1 +1,25 @@
+@startuml  
+left to right direction  
 
+actor "User" as user  
+rectangle "QBit Wallet" {  
+  component "Stealth Address Generator" as stealth  
+  component "Hybrid Signature Engine" as hybrid  
+  component "Quantum Monitor" as monitor  
+}  
+
+rectangle "Bitcoin Network" {  
+  component "Quantum P2P Layer" as p2p  
+  component "Full Node" as node  
+}  
+
+user --> stealth : Generate Address  
+user --> hybrid : Sign Transaction  
+user --> monitor : Alerts  
+
+stealth --> p2p : Broadcast Stealth TX  
+hybrid --> p2p : Broadcast Hybrid Sig  
+monitor --> p2p : Listen for Exposures  
+
+p2p --> node : Validate & Propagate  
+@enduml  
